@@ -11,6 +11,7 @@ module.exports = new (class CustomerController {
     async customerList(req, res) {
         const customers = await Customer.find();
         res.send(customers)
+
     }
 
     async updateCustomer(req, res) {
